@@ -2,3 +2,6 @@ sudo locale-gen el_GR.UTF-8 en_US.UTF-8
 sudo update-locale LANG=en_US.UTF-8 LC_CTYPE=el_GR.UTF-8
 printf '\nexport LANG=en_US.UTF-8\nexport LANGUAGE=en_US:el\nexport LC_CTYPE=el_GR.UTF-8\nunset LC_ALL\n' >> ~/.bashrc
 source ~/.bashrc
+
+or 
+sudo locale-gen en_US.UTF-8 el_GR.UTF-8 && sudo update-locale LANG=en_US.UTF-8 LC_CTYPE=el_GR.UTF-8 && printf '\n# English system messages, Greek character support\nexport LANG=en_US.UTF-8\nexport LANGUAGE=en_US\nexport LC_CTYPE=el_GR.UTF-8\nunset LC_ALL\n' >> ~/.bashrc && source ~/.bashrc
